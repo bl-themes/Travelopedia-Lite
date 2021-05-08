@@ -9,7 +9,7 @@
         ?>
           <a href="<?php echo $lPage->permalink() ?>">
             <div class="d-flex bd-highlight mb-3 bg-light rounded-3">
-              <div class="p-2 bd-highlight"><img src="<?php echo ($page->coverImage()?$lPage->coverImage():Theme::src('img/noimage.png')) ?>" alt="<?php echo $lPage->title() ?>" width="70" height="70" class="rounded-3" style="object-fit: cover;"></div>
+              <div class="p-2 bd-highlight"><img src="<?php echo ($lPage->coverImage()?$lPage->coverImage():Theme::src('img/noimage.png')) ?>" alt="<?php echo $lPage->title() ?>" width="70" height="70" class="rounded-3" style="object-fit: cover;"></div>
               <div class="p-2 bd-highlight align-self-center"><?php echo $lPage->title() ?></div>
             </div>
           </a>
